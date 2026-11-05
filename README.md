@@ -1,3 +1,5 @@
+the website is deployed at :  https://karthikeyan770.github.io/IntraCampus-Buy-and-Sell/
+
 # SNU Campus Marketplace
 A front-end prototype for a student-to-student buy & sell platform for Shiv Nadar University, Chennai.
 
