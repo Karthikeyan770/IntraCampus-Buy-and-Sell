@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sell an item | SNU Marketplace</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"
+        ><span class="brandmark">SNU</span
+        ><span><b>SHIV NADAR UNIVERSITY</b><small>CHENNAI</small></span></a
+      >
+      <nav>
+        <a href="index.html">Home</a><a href="my-listings.html">My Listings</a
+        ><a href="messages.html">Messages</a>
+      </nav>
+    </header>
+    <main class="page">
+      <span class="eyebrow">PASS IT ON</span>
+      <h1>List an item for sale</h1>
+      <p class="muted">Give your pre-loved things a new home on campus.</p>
+      <form id="sellForm" class="form-card wide">
+        <label
+          >Item title<input
+            id="title"
+            required
+            maxlength="100"
+            placeholder="e.g. Engineering Mathematics textbook"
+        /></label>
+        <div class="form-row">
+          <label
+            >Price (₹)<input
+              id="price"
+              type="number"
+              min="1"
+              required
+              placeholder="Enter price" /></label
+          ><label
+            >Category<select id="category" required>
+              <option value="">Select category</option>
+              <option>Books & Academic</option>
+              <option>Electronics & Gadgets</option>
+              <option>Hostel Essentials</option>
+              <option>Clothing & Accessories</option>
+              <option>Sports & Fitness</option>
+              <option>Others</option>
+            </select></label
+          >
+        </div>
+        <label
+          >Description<textarea
+            id="description"
+            required
+            rows="4"
+            placeholder="Condition, details, pickup location…"
+          ></textarea></label
+        ><label
+          >Product image (optional)<input
+            id="image"
+            type="file"
+            accept="image/*" /></label
+        ><button class="btn" type="submit">＋ Publish listing</button>
+        <p id="formMessage" class="message"></p>
+      </form>
+    </main>
+    <script src="js/products.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Chat | SNU Marketplace</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/messaging.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"
+        ><span class="brandmark">SNU</span
+        ><span><b>SHIV NADAR UNIVERSITY</b><small>CHENNAI</small></span></a
+      >
+      <nav>
+        <a href="messages.html">← Inbox</a><a href="index.html">Marketplace</a>
+      </nav>
+    </header>
+    <main class="page chat-page">
+      <div class="chat-heading">
+        <div>
+          <span class="eyebrow">SNU MARKETPLACE</span>
+          <h1 id="chatTitle">Conversation</h1>
+          <p id="productContext" class="muted"></p>
+        </div>
+        <a class="btn btn-outline" href="messages.html">Inbox</a>
+      </div>
+      <div class="chat-shell">
+        <div id="chatMessages" class="chat-messages"></div>
+        <form id="messageForm" class="message-form">
+          <input
+            id="messageInput"
+            maxlength="2000"
+            autocomplete="off"
+            placeholder="Write a message…"
+            required
+          /><button class="btn" type="submit">Send ↗</button>
+        </form>
+      </div>
+    </main>
+    <script src="js/messaging.js"></script>
+  </body>
+</html>
